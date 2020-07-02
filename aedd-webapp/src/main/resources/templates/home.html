@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+layout:decorate="~{default}">
+	<head>
+		<meta charset="UTF-8" th:remove="all">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" th:remove="all">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" th:remove="all">
+		<link rel="stylesheet" href="../static/css/lib/bootstrap-4.1.3.min.css" type="text/css" th:remove="all">
+		<link rel="stylesheet" href="../static/css/lib/googlefonts/gfonts.css" type="text/css" th:remove="all">
+		<link rel="stylesheet" href="../static/css/lib/fontawesome/css/all-5.12.0.min.css" type="text/css" th:remove="all">
+		<link rel="stylesheet" href="../static/css/app.css" type="text/css" th:remove="all">
+		<title>Home</title>
+	</head>
+	<body>
+		<section class="container-fluid bg-secondary py-3" layout:fragment="content">
+			<h1 lang="ar" class="custom-header-amiri text-center display-2 text-success">اهلاً و سهلاً</h1>
+			<h2 class="custom-header-fredericka text-center text-warning">Welcome to AEDD</h2>
+		</section>
+	</body>
+</html>

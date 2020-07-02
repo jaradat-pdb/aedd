@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+layout:decorate="~{default}">
+	<head>
+		<meta charset="UTF-8" th:remove="all">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" th:remove="all">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" th:remove="all">
+		<link rel="stylesheet" href="../static/css/lib/bootstrap-4.1.3.min.css" type="text/css" th:remove="all">
+		<link rel="stylesheet" href="../static/css/lib/googlefonts/gfonts.css" type="text/css" th:remove="all">
+		<link rel="stylesheet" href="../static/css/lib/fontawesome/css/all-5.12.0.min.css" type="text/css" th:remove="all">
+		<link rel="stylesheet" href="../static/css/app.css" type="text/css" th:remove="all">
+		<title>Admin Dashboard</title>
+	</head>
+	<body>
+		<section class="container-fluid" layout:fragment="content">
+			<div class="row">
+				<div class="col-md-6 logo-bg py-3">
+					<div class="row d-flex justify-content-center">
+						<h1 class="custom-header-monofett text-white" th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+					</div>
+					<div class="row d-flex justify-content-center">
+						<h2 class="custom-header-indie">This is your Admin Dashboard</h2>
+					</div>
+					<div class="row d-flex justify-content-center">
+						<a href="#" class="btn btn-lg btn-warning" th:href="@{/secured}">See roles</a>
+					</div>
+				</div>
+				<div class="col-md-6 bg-dark"></div>
+			</div>
+		</section>
+	</body>
+</html>

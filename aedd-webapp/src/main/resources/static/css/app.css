@@ -1,0 +1,118 @@
+body {
+	padding-top: 110px;
+}
+nav > a.navbar-brand {
+	font-size: 3.0rem;
+}
+
+/* class property selectors */
+.custom-header-amiri {
+	font-family: 'Amiri', serif;
+}
+.custom-header-fredericka {
+	font-family: 'Fredericka the Great', cursive;
+}
+.custom-header-indie {
+	font-family: 'Indie Flower', cursive;
+}
+.custom-header-marker {
+	font-family: "Permanent Marker", cursive;
+}
+.custom-header-monofett {
+	font-family: 'Monofett', cursive;
+}
+.jumbotron {
+	background: url('../img/sdor_logo.jpg') no-repeat center center;
+	height: 350px;
+	color: black;
+	text-shadow: #440 0 1px 1px;
+}
+.logo-bg {
+	/*background-color: rgba(0, 0, 0, 0.93); /* 93% black */
+	background-color: hsla(128, 88%, 20%, 0.85); /* Hue Saturation Lightness alpha */
+}
+.logo-bg-secondary {
+	/*background-color: rgba(0, 0, 0, 0.93); /* 93% black */
+	background-color: hsla(46, 98%, 20%, 0.85); /* Hue Saturation Lightness alpha */
+}
+.nav-item > a.nav-link {
+	font-size: 1.75rem;
+}
+/* older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
+.slideshow {
+	height: 100%;
+	left: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+.slideshow > li {
+	animation: imgAnimation 50s linear infinite;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+.slideshow > li:nth-child(1) {
+	background-image: url("../img/sdor_logo.jpg");
+}
+.slideshow > li:nth-child(2) {
+	animation-delay: 10s;
+	background-image: url("../img/sdor_2234.jpg");
+}
+.slideshow > li:nth-child(3) {
+	animation-delay: 20s;
+	background-image: url("../img/sdor_2235.jpg");
+}
+.slideshow > li:nth-child(4) {
+	animation-delay: 30s;
+	background-image: url("../img/sdor_2236.jpg");
+}
+.slideshow > li:nth-child(5) {
+	animation-delay: 40s;
+	background-image: url("../img/sdor_cpr.jpg");
+}
+
+/* id property selectors */
+#landing-header {
+	padding: 40vh;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+#landing-header > h1 {
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Monofett', cursive;
+	width: 100%;
+}
+
+/* css media queries */
+@keyframes imgAnimation {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+	}
+	10% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+	}
+	20% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
+}
